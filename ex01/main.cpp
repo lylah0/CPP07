@@ -6,14 +6,13 @@
 /*   By: lylrandr <lylrandr@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/03 12:30:46 by lylrandr          #+#    #+#             */
-/*   Updated: 2026/03/09 16:50:26 by lylrandr         ###   ########.fr       */
+/*   Updated: 2026/03/09 16:55:09 by lylrandr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <string>
 #include "Iter.hpp"
-#include "Functions.hpp"
 
 int	main(){
 	int			array[5] = {1, 2 ,3, 4, 5};

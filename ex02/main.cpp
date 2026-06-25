@@ -6,7 +6,7 @@
 /*   By: lylrandr <lylrandr@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/20 15:05:16 by lylrandr          #+#    #+#             */
-/*   Updated: 2026/03/20 15:39:27 by lylrandr         ###   ########.fr       */
+/*   Updated: 2026/06/25 18:35:49 by lylrandr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ int main() {
 	std::cout << "===test 4 : operator=" << std::endl;
 	Array<int> assigned;
 	assigned = numbers;
+	std::cout << "assigned[1] = " << assigned[1] << std::endl;
 	assigned[1] = 888;
 	std::cout << "assigned[1] = " << assigned[1] << std::endl;
 	std::cout << "numbers[1] = " << numbers[1] << std::endl;
@@ -51,7 +52,7 @@ int main() {
 		numbers[-1] = 0;
 	}
 	catch (const std::exception& e) {
-		std::cerr << "exception: " << e.what() << std::endl;
+		std::cerr << "exception: " << e.what() << ": out of bounds" << std::endl;
 	}
 
 	// test 6
@@ -60,7 +61,7 @@ int main() {
 		numbers[5] = 0;
 	}
 	catch (const std::exception& e) {
-		std::cerr << "exception: " << e.what() << std::endl;
+		std::cerr << "exception: " << e.what() << ": out of bounds "<< std::endl;
 	}
 
 	// test 7
